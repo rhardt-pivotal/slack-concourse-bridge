@@ -1,0 +1,10 @@
+---
+applications:
+- name: slack-concourse-bridge
+  memory: 256M
+  instances: 1
+  host: slack-concourse-bridge-dev
+  command: ./bin/events
+  env:
+    GOPACKAGENAME: events
+
